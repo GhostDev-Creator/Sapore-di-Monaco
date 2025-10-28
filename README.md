@@ -2,7 +2,7 @@
 
 ## 🌟 Visão Geral
 
-O **Sapore di Monaco** é um projeto de website estático criado como **demonstração acadêmica/escolar** para a disciplina de [Nome da Disciplina, se aplicável]. O objetivo é simular a presença online de um restaurante italiano de alta gastronomia, localizado em Mônaco, focado na elegância, tradição e qualidade das massas.
+O **Sapore di Monaco** é um projeto de website estático criado como **demonstração acadêmica/escolar** para a disciplina de LIMA. O objetivo é simular a presença online de um restaurante italiano de alta gastronomia, localizado em Mônaco, focado na elegância, tradição e qualidade das massas.
 
 O projeto demonstra a capacidade de construir uma página de alta qualidade visual, com navegação fluida e conteúdo bem estruturado, utilizando apenas as tecnologias front-end essenciais.
 
@@ -54,7 +54,8 @@ O projeto é 100% Front-End, focado na estrutura e design:
 
 Este projeto foi desenvolvido por:
 
-| Nome | Função Principal | GitHub / Contato |
+| Nome | Função Principal|
 | :--- | :--- | :--- |
-| [Seu Nome] | Desenvolvedor Front-end | [Link do GitHub ou E-mail] |
-| [Nome do Colega 1] | [Função, ex: Designer / Conteúdo] | [Link do GitHub ou E-mail] |
+| João Guilherme | Desenvolvedor Front-end|
+| Emily Cesar | Designer UX/UI |
+| Laura Lopes | Designer UX/UI |
