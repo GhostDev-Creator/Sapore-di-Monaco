@@ -186,7 +186,7 @@ header {
     border: 0;
     height: 3px;
     background: var(--cor-destaque);
-    margin: 0 auto 15px 0;
+    margin: 0 auto 15px;
     width: 50%;
     max-width: 150px;
 }
@@ -315,4 +315,5 @@ footer p::after {
 }
 .receitas::-webkit-scrollbar-track {
     background-color: #f1f1f1;
+
 }
