@@ -212,7 +212,6 @@ header {
 }
 
 .cards ul li::before {
-    content: '\2022'; 
     color: var(--cor-destaque);
     font-weight: bold;
     display: inline-block;
@@ -254,7 +253,6 @@ footer h2 i {
 }
 
 footer h2::after {
-    content: '|';
     color: var(--cor-texto-claro);
     margin-left: 30px;
     opacity: 0.6;
@@ -317,3 +315,4 @@ footer p::after {
     background-color: #f1f1f1;
 
 }
+
