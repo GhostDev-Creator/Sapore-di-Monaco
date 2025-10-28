@@ -15,7 +15,7 @@
 
 body {
     font-family: var(--fonte-secundaria);
-    background-color: var(--cor-principal-fundo); 
+    background-color: var(--cor-principal-fundo);
     color: var(--cor-texto-escuro);
     line-height: 1.5;
     min-height: 100vh;
@@ -66,11 +66,11 @@ header {
 
 .video {
     position: relative;
-    height: 90vh; 
+    height: 90vh;
     overflow: hidden;
     display: flex;
-    align-items: flex-end; 
-    justify-content: flex-end; 
+    align-items: flex-end;
+    justify-content: flex-end;
     padding: 30px;
 }
 
@@ -89,13 +89,16 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto;
-    height: auto;
     transform: translate(-50%, -50%);
-    min-width: 100vw;
-    min-height: calc(100vw * 9 / 16); 
+    
+    min-width: 100%;
+    min-height: 100%;
+    
+    width: 177.77vh;
+    height: 56.25vw;
+    
+    min-width: max(100%, (100vh * 16 / 9));
+    min-height: max(100%, (100vw * 9 / 16));
 }
 
 .video::before {
@@ -131,7 +134,7 @@ header {
 }
 
 .image img {
-    width: 100%; 
+    width: 100%;
     height: 120px;
     object-fit: cover;
     border: 1px solid #eee;
@@ -141,7 +144,7 @@ header {
     padding: 50px 0;
     background-color: var(--cor-fundo-claro);
     overflow-x: auto;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .cards {
@@ -152,8 +155,8 @@ header {
 
 .classicas, .molhos, .recheados, .especiais, .gratinados {
     display: inline-block;
-    width: 300px; 
-    min-width: 300px; 
+    width: 300px;
+    min-width: 300px;
     background-color: var(--cor-fundo-claro);
     padding: 20px;
     text-align: left;
@@ -202,7 +205,7 @@ header {
 .cards ul {
     list-style: none;
     padding-left: 0;
-    font-size: 0.85em; 
+    font-size: 0.85em;
     color: var(--cor-texto-escuro);
 }
 
@@ -212,6 +215,7 @@ header {
 }
 
 .cards ul li::before {
+    content: "• ";
     color: var(--cor-destaque);
     font-weight: bold;
     display: inline-block;
@@ -238,7 +242,7 @@ footer h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; 
+    gap: 30px;
 }
 
 footer h2, footer p {
@@ -253,6 +257,7 @@ footer h2 i {
 }
 
 footer h2::after {
+    content: "|";
     color: var(--cor-texto-claro);
     margin-left: 30px;
     opacity: 0.6;
@@ -260,48 +265,6 @@ footer h2::after {
 
 footer p::after {
     content: none;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-    .nav-menu {
-        margin-top: 15px;
-    }
-    .nav-menu a {
-        margin: 0 10px;
-        font-size: 0.8em;
-    }
-    .video {
-        height: 60vh;
-    }
-    
-    .image {
-        width: 150px;
-        padding: 5px 5px 15px 5px;
-    }
-    
-    .image img {
-        height: 100px;
-    }
-    
-    .image h1 {
-        font-size: 0.8em;
-    }
-
-    .footer-info {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    footer h2::after {
-        content: none;
-    }
-
-    footer h1 {
-        font-size: 1.6em;
-    }
 }
 
 .receitas::-webkit-scrollbar {
@@ -313,6 +276,88 @@ footer p::after {
 }
 .receitas::-webkit-scrollbar-track {
     background-color: #f1f1f1;
-
 }
 
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    .logo img {
+        max-width: 100px;
+    }
+    .nav-menu {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-menu a {
+        margin: 5px 8px;
+        font-size: 0.75em;
+    }
+
+    .video {
+        height: 60vh;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 160px;
+        padding: 8px;
+    }
+    .image h1 {
+        font-size: 0.9em;
+    }
+    .image img {
+        height: 80px;
+    }
+
+    .receitas {
+        padding: 40px 0;
+    }
+    .cards {
+        padding: 0 20px;
+        gap: 20px;
+    }
+    .classicas, .molhos, .recheados, .especiais, .gratinados {
+        width: 250px;
+        min-width: 250px;
+        padding: 15px;
+    }
+    .cards h1 {
+        font-size: 1.2em;
+    }
+    .cards h2 {
+        font-size: 0.8em;
+        min-height: 70px;
+    }
+    .cards ul {
+        font-size: 0.8em;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+    footer h1 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+    footer h2, footer p {
+        font-size: 1em;
+    }
+    .footer-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+    footer h2::after {
+        content: none;
+    }
+}
