@@ -27,7 +27,7 @@ Para ver o resultado final deste projeto conceitual:
 
 1.  **Acesso Rápido (Hospedagem):**
     **Link de Acesso:**
-    `[https://ghostdev-creator.github.io/Sapore-di-Monaco/](https://ghostdev-creator.github.io/Sapore-di-Monaco/)`
+    [https://ghostdev-creator.github.io/Sapore-di-Monaco/](https://ghostdev-creator.github.io/Sapore-di-Monaco/)
 ---
 
 ## 🛠️ Tecnologias Utilizadas
